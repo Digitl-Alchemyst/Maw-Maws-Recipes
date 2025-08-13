@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev:turbo": "next dev --turbopack",
-    "install deps": "pnpm install",
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
@@ -13,11 +12,8 @@
     "lint:fix": "next lint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "clean": "rm -rf .next out dist coverage",
-    "rm -rf nm": "rm -rf pnpm-lock.json node_modules",
+    "clean-repo": "rm -rf .next out dist coverage",
+    "remove-deps": "rm -rf package-lock.json node_modules",
     "deploy": "npx vercel",
     "deploy:prod": "npx vercel --prod"
   },
